@@ -1,0 +1,130 @@
+/* Actividad 1 CSS */
+
+*{
+	font-family:verdana;
+}
+
+body{
+	margin:0px;
+	background: #d1d1e0;
+}
+
+header{
+	padding:50px;
+	text-align: center;	
+}
+
+span{
+	font-size:55px;
+	padding:50px;
+}
+
+nav{
+	border: 2px solid black;
+	background:  #676798;
+	text-align: center;
+	margin:0px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+	margin:0px;
+}
+
+li {
+	display: inline-block;
+	text-decoration: none;
+}
+
+li:hover {
+	background:  white;
+	border-left:2px solid black;
+	border-right:2px solid black;
+	
+}
+
+li a{
+	text-decoration: none;
+	padding-left:40px;
+	padding-right:40px;
+	padding-bottom:40px;
+	padding-top:20px;
+	color:white;
+
+}
+
+a:hover {
+	color: red;
+	border:2px solid black;
+}
+
+a:visited {
+	font-family:Helvetica;
+	font-size:small;
+}
+
+section{
+	width:100%;
+    display:flex;
+    justify-content: space-around;
+	padding-bottom:100px;
+}
+
+article{
+	border: 3px solid black;
+	height:80px;
+	width: auto;
+	margin-top:10px;
+	padding:50px;
+	padding-bottom:200px;
+	border-radius: 50px;
+	background:  white;
+}
+
+aside{
+	margin-top:10px;
+	border: 1px solid black;
+	background:   #a4a4c1;
+	padding:50px;
+}
+
+footer{
+	border: 1px solid black;
+	bottom:0px;
+	width:100%;
+	position:fixed;
+	background: brown;
+	padding:30px;
+}
+
+.trio{
+	border-radius: 30px;
+}
+
+.imagenes{
+	height: 100px;
+	max-width: 100%;
+}
+
+.texto{
+	Width:250px;
+}
+
+.logo{
+	float:left;
+	padding:2px;
+}
+
+#texto_footer{
+	font-size:medium;
+}
+
+form{
+	padding:50px;
+	padding-left:20%;
+	padding-right:20%;
+}
+fieldset{
+	border:2px solid black;
+}

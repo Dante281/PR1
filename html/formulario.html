@@ -1,0 +1,112 @@
+<!DOCTYPE html>			<!--Comentario------->
+<HTML>
+	<head>
+		<title>Formulario</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	</head>
+	
+	<body>
+		<header>
+			<img class="smiley1" src="../images/Smiley.png" width="42" height="42">
+			<span>Bienvenido a mi primer formulario</span>
+			<img class="smiley1" src="../images/Smiley.png" width="42" height="42">
+		</header>
+		
+		<nav>
+			<ul>
+				<li id="Menu1"><a href="../index.html">Pagina principal</a></li>
+				<li id="Menu2"><a href="https://linkiafp.es/" target="_blank">Linkia FP</a></li>
+				<li id="Menu3"><a href="https://www.w3schools.com/html/default.asp" target="_blank">Guia HTML5</a></li>
+				<li id="Menu4"><a href="https://www.w3schools.com/css/default.asp" target="_blank">Guia CSS</a></li>
+				<li id="Menu5"><a href="https://www.w3schools.com/xml/default.asp" target="_blank">Guia XML</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+		<form action="validar.php" method="GET">
+		<fieldset>
+		<legend>Datos personales:</legend>
+		
+		<p>
+		<label for="nombre">Nombre</label>
+		<input type="text" id="nombre" name="nombre" required maxlength="30" placeholder="Añade tu nombre"/>
+		
+		<label for="Apellidos">Apellidos</label>
+		<input type="text" id="Apellidos" name="Apellidos" required maxlength="50" placeholder="Añade tus apellidos"/>
+		</p>
+		<p>
+		<label for="bday">Fecha De Nacimiento</label>
+		<input type="date" id="bday" name="bday"
+		</p>
+		<p>
+		<label for="adress">Dirección</label>
+		<input type="adress" id="adress" name="adress" placeholder="Añade tu dirección"/>
+		
+		<label for="Cuidad">Cuidad</label>
+		<select name="Cuidad">
+			  <option value="Barcelona">Barcelona</option>
+			  <option value="Madrid">Madrid</option>
+			  <option value="Bilbao">Bilbao</option>
+			  <option value="Sevilla">Sevilla</option>
+			</select>
+		<label for="CP">Codigo Postal</label>
+		<input type="number " id="CP" name="CP"  maxlength="5" minlength="5" placeholder="Añade tus apellidos"/>
+		</p>
+		<p>
+		<label for="mail">Email</label>
+		<input type="email" id="mail" name="mail" required placeholder="ejemplo@ejemplo.com"/>
+		</P>
+		<p>
+		<label for="file">Foto</label>
+		<input type="file" name="file" />
+		</p>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Datos académicos:</legend>
+		
+		
+		<p><label for="ciclo">Ciclo cursado actualmente:</label>
+		<select name="ciclo">
+			  <option value="DAM">DAM</option>
+			  <option value="ASIX">ASIX</option>
+			  <option value="DAW">DAW</option>
+			</select></p>
+		
+			<p>
+			<input type="radio" name="curso" value="primer_curso" />
+			<label for="curso">Primer Curso</label>
+			<input type="radio" name="curso" value="segundo_curso" />
+			<label for="curso">Segundo Curso</label></p>
+		
+		
+			<p><label for="ciclo">Idiomas:</label></br>
+			<input type="checkbox" name="Idiomas" value="EN"/>Ingles</br>
+			<input type="checkbox" name="Idiomas" value="CA"/>Castellano</br>
+			<input type="checkbox" name="Idiomas" value="CH"/>Chino</br>
+			
+			<p><label for="asignaturas">Asignaturas en las que estás matriculado</label>
+			<input type="numero" name="asignaturas" maxlength="1" placeholder="Elige un numero del 1 al 6" pattern="[0-6]+"></p>
+		
+		<p><label for="observaciones">Observaciones:</label>
+		<input type="textarea" id="observaciones" name="observaciones"></p>
+		
+		
+		
+		
+		<p><input type="submit" value="Enviar"/>
+		<input type="reset"></p>
+		
+		</fieldset>
+		</form >
+		</main>
+		
+		<footer>
+		<a href="https://www.facebook.com"/><img class="logo" src="../images/f.png" width="50" height="50"></a>
+		<a href="https://twitter.com/?lang=es"/><img class="logo" src="../images/t.png" width="50" height="50"></a>
+		<a href="https://plus.google.com"/><img class="logo" src="../images/g.png" width="50" height="50"></a>
+		<span id="texto_footer">Todos los Derechos Reservados (All Rights Reserved)</span>
+		</footer>
+	<body>
+</HTML>
